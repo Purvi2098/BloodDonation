@@ -1,0 +1,713 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{7EC762D9-E2B0-4313-AFE5-AE137CBA7928}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>jjjjj</RootNamespace>
+    <AssemblyName>jjjjj</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <UseIISExpress>false</UseIISExpress>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="About.aspx" />
+    <Content Include="Account\ChangePassword.aspx" />
+    <Content Include="Account\ChangePasswordSuccess.aspx" />
+    <Content Include="Account\Login.aspx" />
+    <Content Include="Account\Register.aspx" />
+    <Content Include="addBlood.aspx" />
+    <Content Include="addcamp.aspx" />
+    <Content Include="addFAQ.aspx" />
+    <Content Include="admindashboard.aspx" />
+    <Content Include="adminlogin.aspx" />
+    <Content Include="App_Themes\adminlogin.jpg" />
+    <Content Include="App_Themes\assets\css\style.css" />
+    <Content Include="App_Themes\assets\js\main.js" />
+    <Content Include="App_Themes\assets\js\util.js" />
+    <Content Include="App_Themes\cpsswd.png" />
+    <Content Include="App_Themes\logout.jpg" />
+    <Content Include="App_Themes\mail\css\main.css" />
+    <Content Include="App_Themes\mail\css\util.css" />
+    <Content Include="App_Themes\mail\fonts\font-awesome-4.7.0\css\font-awesome.css" />
+    <Content Include="App_Themes\mail\fonts\font-awesome-4.7.0\css\font-awesome.min.css" />
+    <Content Include="App_Themes\mail\fonts\font-awesome-4.7.0\fonts\fontawesome-webfont.svg" />
+    <Content Include="App_Themes\mail\fonts\font-awesome-4.7.0\HELP-US-OUT.txt" />
+    <Content Include="App_Themes\mail\fonts\montserrat\OFL.txt" />
+    <Content Include="App_Themes\mail\images\icons\favicon.ico" />
+    <Content Include="App_Themes\mail\images\img-01.png" />
+    <Content Include="App_Themes\mail\js\main.js" />
+    <Content Include="App_Themes\mail\vendor\animate\animate.css" />
+    <Content Include="App_Themes\mail\vendor\bootstrap\css\bootstrap-grid.css" />
+    <Content Include="App_Themes\mail\vendor\bootstrap\css\bootstrap-grid.min.css" />
+    <Content Include="App_Themes\mail\vendor\bootstrap\css\bootstrap-reboot.css" />
+    <Content Include="App_Themes\mail\vendor\bootstrap\css\bootstrap-reboot.min.css" />
+    <Content Include="App_Themes\mail\vendor\bootstrap\css\bootstrap.css" />
+    <Content Include="App_Themes\mail\vendor\bootstrap\css\bootstrap.min.css" />
+    <Content Include="App_Themes\mail\vendor\bootstrap\js\bootstrap.js" />
+    <Content Include="App_Themes\mail\vendor\bootstrap\js\bootstrap.min.js" />
+    <Content Include="App_Themes\mail\vendor\bootstrap\js\popper.js" />
+    <Content Include="App_Themes\mail\vendor\bootstrap\js\popper.min.js" />
+    <Content Include="App_Themes\mail\vendor\bootstrap\js\tooltip.js" />
+    <Content Include="App_Themes\mail\vendor\css-hamburgers\hamburgers.css" />
+    <Content Include="App_Themes\mail\vendor\css-hamburgers\hamburgers.min.css" />
+    <Content Include="App_Themes\mail\vendor\jquery\jquery-3.2.1.min.js" />
+    <Content Include="App_Themes\mail\vendor\select2\select2.css" />
+    <Content Include="App_Themes\mail\vendor\select2\select2.js" />
+    <Content Include="App_Themes\mail\vendor\select2\select2.min.css" />
+    <Content Include="App_Themes\mail\vendor\select2\select2.min.js" />
+    <Content Include="App_Themes\mail\vendor\tilt\tilt.jquery.min.js" />
+    <Content Include="App_Themes\noprofile.png" />
+    <Content Include="App_Themes\profile.jpg" />
+    <Content Include="App_Themes\reg\regjs.js" />
+    <Content Include="App_Themes\Theme1\css1\fonts\font-awesome-4.7.0\css\font-awesome.css" />
+    <Content Include="App_Themes\Theme1\css1\fonts\font-awesome-4.7.0\css\font-awesome.min.css" />
+    <Content Include="App_Themes\Theme1\css1\fonts\font-awesome-4.7.0\fonts\fontawesome-webfont.svg" />
+    <Content Include="App_Themes\Theme1\css1\fonts\font-awesome-4.7.0\HELP-US-OUT.txt" />
+    <Content Include="App_Themes\Theme1\css1\fonts\iconic\css\material-design-iconic-font.css" />
+    <Content Include="App_Themes\Theme1\css1\fonts\iconic\css\material-design-iconic-font.min.css" />
+    <Content Include="App_Themes\Theme1\css1\fonts\iconic\fonts\Material-Design-Iconic-Font.svg" />
+    <Content Include="App_Themes\Theme1\css1\fonts\Linearicons-Free-v1.0.0\icon-font.min.css" />
+    <Content Include="App_Themes\Theme1\css1\fonts\Linearicons-Free-v1.0.0\WebFont\Linearicons-Free.svg" />
+    <Content Include="App_Themes\Theme1\css1\main.css" />
+    <Content Include="App_Themes\Theme1\css1\util.css" />
+    <Content Include="App_Themes\Theme1\fonts1\font-awesome-4.7.0\css\font-awesome.css" />
+    <Content Include="App_Themes\Theme1\fonts1\font-awesome-4.7.0\css\font-awesome.min.css" />
+    <Content Include="App_Themes\Theme1\fonts1\font-awesome-4.7.0\fonts\fontawesome-webfont.svg" />
+    <Content Include="App_Themes\Theme1\fonts1\font-awesome-4.7.0\HELP-US-OUT.txt" />
+    <Content Include="App_Themes\Theme1\fonts1\iconic\css\material-design-iconic-font.css" />
+    <Content Include="App_Themes\Theme1\fonts1\iconic\css\material-design-iconic-font.min.css" />
+    <Content Include="App_Themes\Theme1\fonts1\iconic\fonts\Material-Design-Iconic-Font.svg" />
+    <Content Include="App_Themes\Theme1\fonts1\Linearicons-Free-v1.0.0\icon-font.min.css" />
+    <Content Include="App_Themes\Theme1\fonts1\Linearicons-Free-v1.0.0\WebFont\Linearicons-Free.svg" />
+    <Content Include="App_Themes\Theme1\fonts1\ubuntu\UFL.txt" />
+    <Content Include="App_Themes\Theme1\images1\welcome.png" />
+    <Content Include="App_Themes\Theme1\js1\main.js" />
+    <Content Include="App_Themes\Theme1\vendor1\animate\animate.css" />
+    <Content Include="App_Themes\Theme1\vendor1\animsition\css\animsition.css" />
+    <Content Include="App_Themes\Theme1\vendor1\animsition\css\animsition.min.css" />
+    <Content Include="App_Themes\Theme1\vendor1\animsition\js\animsition.js" />
+    <Content Include="App_Themes\Theme1\vendor1\animsition\js\animsition.min.js" />
+    <Content Include="App_Themes\Theme1\vendor1\bootstrap\css\bootstrap-grid.css" />
+    <Content Include="App_Themes\Theme1\vendor1\bootstrap\css\bootstrap-grid.min.css" />
+    <Content Include="App_Themes\Theme1\vendor1\bootstrap\css\bootstrap-reboot.css" />
+    <Content Include="App_Themes\Theme1\vendor1\bootstrap\css\bootstrap-reboot.min.css" />
+    <Content Include="App_Themes\Theme1\vendor1\bootstrap\css\bootstrap.css" />
+    <Content Include="App_Themes\Theme1\vendor1\bootstrap\css\bootstrap.min.css" />
+    <Content Include="App_Themes\Theme1\vendor1\bootstrap\js\bootstrap.js" />
+    <Content Include="App_Themes\Theme1\vendor1\bootstrap\js\bootstrap.min.js" />
+    <Content Include="App_Themes\Theme1\vendor1\bootstrap\js\popper.js" />
+    <Content Include="App_Themes\Theme1\vendor1\bootstrap\js\popper.min.js" />
+    <Content Include="App_Themes\Theme1\vendor1\bootstrap\js\tooltip.js" />
+    <Content Include="App_Themes\Theme1\vendor1\countdowntime\countdowntime.js" />
+    <Content Include="App_Themes\Theme1\vendor1\css-hamburgers\hamburgers.css" />
+    <Content Include="App_Themes\Theme1\vendor1\css-hamburgers\hamburgers.min.css" />
+    <Content Include="App_Themes\Theme1\vendor1\daterangepicker\daterangepicker.css" />
+    <Content Include="App_Themes\Theme1\vendor1\daterangepicker\daterangepicker.js" />
+    <Content Include="App_Themes\Theme1\vendor1\daterangepicker\moment.js" />
+    <Content Include="App_Themes\Theme1\vendor1\daterangepicker\moment.min.js" />
+    <Content Include="App_Themes\Theme1\vendor1\jquery\jquery-3.2.1.min.js" />
+    <Content Include="App_Themes\Theme1\vendor1\perfect-scrollbar\perfect-scrollbar.css" />
+    <Content Include="App_Themes\Theme1\vendor1\perfect-scrollbar\perfect-scrollbar.min.js" />
+    <Content Include="App_Themes\Theme1\vendor1\select2\select2.css" />
+    <Content Include="App_Themes\Theme1\vendor1\select2\select2.js" />
+    <Content Include="App_Themes\Theme1\vendor1\select2\select2.min.css" />
+    <Content Include="App_Themes\Theme1\vendor1\select2\select2.min.js" />
+    <Content Include="App_Themes\usertheme\css\bootstrap.css" />
+    <Content Include="App_Themes\usertheme\css\bootstrap.min.css" />
+    <Content Include="App_Themes\usertheme\css\elegant-fonts.css" />
+    <Content Include="App_Themes\usertheme\css\font-awesome.css" />
+    <Content Include="App_Themes\usertheme\css\font-awesome.min.css" />
+    <Content Include="App_Themes\usertheme\css\swiper.css" />
+    <Content Include="App_Themes\usertheme\css\swiper.min.css" />
+    <Content Include="App_Themes\usertheme\css\themify-icons.css" />
+    <Content Include="App_Themes\usertheme\fonts\ElegantIcons.svg" />
+    <Content Include="App_Themes\usertheme\fonts\fontawesome-webfont.svg" />
+    <Content Include="App_Themes\usertheme\fonts\themify.svg" />
+    <Content Include="App_Themes\usertheme\images\1.jpg" />
+    <Content Include="App_Themes\usertheme\images\2.jpg" />
+    <Content Include="App_Themes\usertheme\images\3.jpg" />
+    <Content Include="App_Themes\usertheme\images\a.jpg" />
+    <Content Include="App_Themes\usertheme\images\about-bg.jpg" />
+    <Content Include="App_Themes\usertheme\images\b.jpg" />
+    <Content Include="App_Themes\usertheme\images\bb.png" />
+    <Content Include="App_Themes\usertheme\images\clogo.png" />
+    <Content Include="App_Themes\usertheme\images\cause-1.jpg" />
+    <Content Include="App_Themes\usertheme\images\cause-2.jpg" />
+    <Content Include="App_Themes\usertheme\images\cause-3.jpg" />
+    <Content Include="App_Themes\usertheme\images\cause-4.jpg" />
+    <Content Include="App_Themes\usertheme\images\cause-5.jpg" />
+    <Content Include="App_Themes\usertheme\images\cause-6.jpg" />
+    <Content Include="App_Themes\usertheme\images\cause-bg.jpg" />
+    <Content Include="App_Themes\usertheme\images\causes-bg.jpg" />
+    <Content Include="App_Themes\usertheme\images\charity-gray.png" />
+    <Content Include="App_Themes\usertheme\images\charity-white.png" />
+    <Content Include="App_Themes\usertheme\images\charity.png" />
+    <Content Include="App_Themes\usertheme\images\h-1.jpg" />
+    <Content Include="App_Themes\usertheme\images\h-2.jpg" />
+    <Content Include="App_Themes\usertheme\images\h-3.jpg" />
+    <Content Include="App_Themes\usertheme\images\logo.png" />
+    <Content Include="App_Themes\usertheme\images\contact-bg.jpg" />
+    <Content Include="App_Themes\usertheme\images\donate-icon.png" />
+    <Content Include="App_Themes\usertheme\images\donation-gray.png" />
+    <Content Include="App_Themes\usertheme\images\donation-white.png" />
+    <Content Include="App_Themes\usertheme\images\donation.png" />
+    <Content Include="App_Themes\usertheme\images\dove.png" />
+    <Content Include="App_Themes\usertheme\images\elements-bg.jpg" />
+    <Content Include="App_Themes\usertheme\images\event-1.jpg" />
+    <Content Include="App_Themes\usertheme\images\event-2.jpg" />
+    <Content Include="App_Themes\usertheme\images\event-3.jpg" />
+    <Content Include="App_Themes\usertheme\images\eye-for.jpg" />
+    <Content Include="App_Themes\usertheme\images\featured-causes.jpg" />
+    <Content Include="App_Themes\usertheme\images\foot-bg.jpg" />
+    <Content Include="App_Themes\usertheme\images\foot-logo.png" />
+    <Content Include="App_Themes\usertheme\images\h.jpg" />
+    <Content Include="App_Themes\usertheme\images\hands-gray.png" />
+    <Content Include="App_Themes\usertheme\images\hands-white.png" />
+    <Content Include="App_Themes\usertheme\images\hero.jpg" />
+    <Content Include="App_Themes\usertheme\images\i.jpg" />
+    <Content Include="App_Themes\usertheme\images\news-bg.jpg" />
+    <Content Include="App_Themes\usertheme\images\olive.png" />
+    <Content Include="App_Themes\usertheme\images\oshomah.jpg" />
+    <Content Include="App_Themes\usertheme\images\p-1.jpg" />
+    <Content Include="App_Themes\usertheme\images\p-2.jpg" />
+    <Content Include="App_Themes\usertheme\images\p-3.jpg" />
+    <Content Include="App_Themes\usertheme\images\portfolio-bg.jpg" />
+    <Content Include="App_Themes\usertheme\images\single-cause-bg.jpg" />
+    <Content Include="App_Themes\usertheme\images\teamwork.png" />
+    <Content Include="App_Themes\usertheme\images\testimonial-1.jpg" />
+    <Content Include="App_Themes\usertheme\images\testimonial-2.jpg" />
+    <Content Include="App_Themes\usertheme\images\u-1.jpg" />
+    <Content Include="App_Themes\usertheme\images\u-2.jpg" />
+    <Content Include="App_Themes\usertheme\images\u-3.jpg" />
+    <Content Include="App_Themes\usertheme\images\welcome-bg.jpg" />
+    <Content Include="App_Themes\usertheme\images\welcome.jpg" />
+    <Content Include="App_Themes\usertheme\js\circle-progress.min.js" />
+    <Content Include="App_Themes\usertheme\js\custom.js" />
+    <Content Include="App_Themes\usertheme\js\jquery.barfiller.js" />
+    <Content Include="App_Themes\usertheme\js\jquery.collapsible.min.js" />
+    <Content Include="App_Themes\usertheme\js\jquery.countdown.js" />
+    <Content Include="App_Themes\usertheme\js\jquery.countdown.min.js" />
+    <Content Include="App_Themes\usertheme\js\jquery.countTo.min.js" />
+    <Content Include="App_Themes\usertheme\js\jquery.js" />
+    <Content Include="App_Themes\usertheme\js\swiper.js" />
+    <Content Include="App_Themes\usertheme\js\swiper.min.js" />
+    <Content Include="camps.aspx" />
+    <Content Include="changePasswd.aspx" />
+    <Content Include="DonorDetail.aspx" />
+    <Content Include="donationReg.aspx" />
+    <Content Include="profile.aspx" />
+    <Content Include="Registration.aspx" />
+    <Content Include="regstyle.css" />
+    <Content Include="feedback.aspx" />
+    <Content Include="index.aspx" />
+    <Content Include="login.aspx" />
+    <Content Include="news.aspx" />
+    <Content Include="request.aspx" />
+    <Content Include="requestedDonor.aspx" />
+    <Content Include="search.aspx" />
+    <Content Include="sendMail.aspx" />
+    <Content Include="ShowFeedback.aspx" />
+    <Content Include="style.css" />
+    <Content Include="Styles\Site.css" />
+    <Content Include="Default.aspx" />
+    <Content Include="Global.asax" />
+    <Content Include="Scripts\jquery-1.4.1-vsdoc.js" />
+    <Content Include="Scripts\jquery-1.4.1.js" />
+    <Content Include="Scripts\jquery-1.4.1.min.js" />
+    <Content Include="Web.config" />
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="WebForm1.aspx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="About.aspx.cs">
+      <DependentUpon>About.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="About.aspx.designer.cs">
+      <DependentUpon>About.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\ChangePassword.aspx.cs">
+      <DependentUpon>ChangePassword.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\ChangePassword.aspx.designer.cs">
+      <DependentUpon>ChangePassword.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\ChangePasswordSuccess.aspx.cs">
+      <DependentUpon>ChangePasswordSuccess.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\ChangePasswordSuccess.aspx.designer.cs">
+      <DependentUpon>ChangePasswordSuccess.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\Register.aspx.cs">
+      <DependentUpon>Register.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\Register.aspx.designer.cs">
+      <DependentUpon>Register.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="addBlood.aspx.cs">
+      <DependentUpon>addBlood.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="addBlood.aspx.designer.cs">
+      <DependentUpon>addBlood.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="addcamp.aspx.cs">
+      <DependentUpon>addcamp.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="addcamp.aspx.designer.cs">
+      <DependentUpon>addcamp.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="addFAQ.aspx.cs">
+      <DependentUpon>addFAQ.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="addFAQ.aspx.designer.cs">
+      <DependentUpon>addFAQ.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admindashboard.aspx.cs">
+      <DependentUpon>admindashboard.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admindashboard.aspx.designer.cs">
+      <DependentUpon>admindashboard.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="adminlogin.aspx.cs">
+      <DependentUpon>adminlogin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="adminlogin.aspx.designer.cs">
+      <DependentUpon>adminlogin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="camps.aspx.cs">
+      <DependentUpon>camps.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="camps.aspx.designer.cs">
+      <DependentUpon>camps.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="changePasswd.aspx.cs">
+      <DependentUpon>changePasswd.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="changePasswd.aspx.designer.cs">
+      <DependentUpon>changePasswd.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DonorDetail.aspx.cs">
+      <DependentUpon>DonorDetail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DonorDetail.aspx.designer.cs">
+      <DependentUpon>DonorDetail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="donationReg.aspx.cs">
+      <DependentUpon>donationReg.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="donationReg.aspx.designer.cs">
+      <DependentUpon>donationReg.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="feedback.aspx.cs">
+      <DependentUpon>feedback.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="feedback.aspx.designer.cs">
+      <DependentUpon>feedback.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="index.aspx.cs">
+      <DependentUpon>index.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="index.aspx.designer.cs">
+      <DependentUpon>index.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="login.aspx.cs">
+      <DependentUpon>login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="login.aspx.designer.cs">
+      <DependentUpon>login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="news.aspx.cs">
+      <DependentUpon>news.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="news.aspx.designer.cs">
+      <DependentUpon>news.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="profile.aspx.cs">
+      <DependentUpon>profile.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="profile.aspx.designer.cs">
+      <DependentUpon>profile.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Registration.aspx.cs">
+      <DependentUpon>Registration.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Registration.aspx.designer.cs">
+      <DependentUpon>Registration.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="request.aspx.cs">
+      <DependentUpon>request.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="request.aspx.designer.cs">
+      <DependentUpon>request.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="requestedDonor.aspx.cs">
+      <DependentUpon>requestedDonor.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="requestedDonor.aspx.designer.cs">
+      <DependentUpon>requestedDonor.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="search.aspx.cs">
+      <DependentUpon>search.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="search.aspx.designer.cs">
+      <DependentUpon>search.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="sendMail.aspx.cs">
+      <DependentUpon>sendMail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="sendMail.aspx.designer.cs">
+      <DependentUpon>sendMail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ShowFeedback.aspx.cs">
+      <DependentUpon>ShowFeedback.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ShowFeedback.aspx.designer.cs">
+      <DependentUpon>ShowFeedback.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Site.Master.cs">
+      <DependentUpon>Site.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Site.Master.designer.cs">
+      <DependentUpon>Site.Master</DependentUpon>
+    </Compile>
+    <Compile Include="WebForm1.aspx.cs">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebForm1.aspx.designer.cs">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\App_LocalResources\" />
+    <Folder Include="App_GlobalResources\" />
+    <Folder Include="upload\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Account\Web.config" />
+    <Content Include="Site.Master" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App_Themes\assets\css\style.scss" />
+    <None Include="App_Themes\mail\fonts\font-awesome-4.7.0\fonts\fontawesome-webfont.eot" />
+    <None Include="App_Themes\mail\fonts\font-awesome-4.7.0\fonts\fontawesome-webfont.ttf" />
+    <None Include="App_Themes\mail\fonts\font-awesome-4.7.0\fonts\fontawesome-webfont.woff" />
+    <None Include="App_Themes\mail\fonts\font-awesome-4.7.0\fonts\fontawesome-webfont.woff2" />
+    <None Include="App_Themes\mail\fonts\font-awesome-4.7.0\fonts\FontAwesome.otf" />
+    <None Include="App_Themes\mail\fonts\font-awesome-4.7.0\less\animated.less" />
+    <None Include="App_Themes\mail\fonts\font-awesome-4.7.0\less\bordered-pulled.less" />
+    <None Include="App_Themes\mail\fonts\font-awesome-4.7.0\less\core.less" />
+    <None Include="App_Themes\mail\fonts\font-awesome-4.7.0\less\fixed-width.less" />
+    <None Include="App_Themes\mail\fonts\font-awesome-4.7.0\less\font-awesome.less" />
+    <None Include="App_Themes\mail\fonts\font-awesome-4.7.0\less\icons.less" />
+    <None Include="App_Themes\mail\fonts\font-awesome-4.7.0\less\larger.less" />
+    <None Include="App_Themes\mail\fonts\font-awesome-4.7.0\less\list.less" />
+    <None Include="App_Themes\mail\fonts\font-awesome-4.7.0\less\mixins.less" />
+    <None Include="App_Themes\mail\fonts\font-awesome-4.7.0\less\path.less" />
+    <None Include="App_Themes\mail\fonts\font-awesome-4.7.0\less\rotated-flipped.less" />
+    <None Include="App_Themes\mail\fonts\font-awesome-4.7.0\less\screen-reader.less" />
+    <None Include="App_Themes\mail\fonts\font-awesome-4.7.0\less\stacked.less" />
+    <None Include="App_Themes\mail\fonts\font-awesome-4.7.0\less\variables.less" />
+    <None Include="App_Themes\mail\fonts\font-awesome-4.7.0\scss\font-awesome.scss" />
+    <None Include="App_Themes\mail\fonts\font-awesome-4.7.0\scss\_animated.scss" />
+    <None Include="App_Themes\mail\fonts\font-awesome-4.7.0\scss\_bordered-pulled.scss" />
+    <None Include="App_Themes\mail\fonts\font-awesome-4.7.0\scss\_core.scss" />
+    <None Include="App_Themes\mail\fonts\font-awesome-4.7.0\scss\_fixed-width.scss" />
+    <None Include="App_Themes\mail\fonts\font-awesome-4.7.0\scss\_icons.scss" />
+    <None Include="App_Themes\mail\fonts\font-awesome-4.7.0\scss\_larger.scss" />
+    <None Include="App_Themes\mail\fonts\font-awesome-4.7.0\scss\_list.scss" />
+    <None Include="App_Themes\mail\fonts\font-awesome-4.7.0\scss\_mixins.scss" />
+    <None Include="App_Themes\mail\fonts\font-awesome-4.7.0\scss\_path.scss" />
+    <None Include="App_Themes\mail\fonts\font-awesome-4.7.0\scss\_rotated-flipped.scss" />
+    <None Include="App_Themes\mail\fonts\font-awesome-4.7.0\scss\_screen-reader.scss" />
+    <None Include="App_Themes\mail\fonts\font-awesome-4.7.0\scss\_stacked.scss" />
+    <None Include="App_Themes\mail\fonts\font-awesome-4.7.0\scss\_variables.scss" />
+    <None Include="App_Themes\mail\fonts\montserrat\Montserrat-Black.ttf" />
+    <None Include="App_Themes\mail\fonts\montserrat\Montserrat-BlackItalic.ttf" />
+    <None Include="App_Themes\mail\fonts\montserrat\Montserrat-Bold.ttf" />
+    <None Include="App_Themes\mail\fonts\montserrat\Montserrat-BoldItalic.ttf" />
+    <None Include="App_Themes\mail\fonts\montserrat\Montserrat-ExtraBold.ttf" />
+    <None Include="App_Themes\mail\fonts\montserrat\Montserrat-ExtraBoldItalic.ttf" />
+    <None Include="App_Themes\mail\fonts\montserrat\Montserrat-ExtraLight.ttf" />
+    <None Include="App_Themes\mail\fonts\montserrat\Montserrat-ExtraLightItalic.ttf" />
+    <None Include="App_Themes\mail\fonts\montserrat\Montserrat-Italic.ttf" />
+    <None Include="App_Themes\mail\fonts\montserrat\Montserrat-Light.ttf" />
+    <None Include="App_Themes\mail\fonts\montserrat\Montserrat-LightItalic.ttf" />
+    <None Include="App_Themes\mail\fonts\montserrat\Montserrat-Medium.ttf" />
+    <None Include="App_Themes\mail\fonts\montserrat\Montserrat-MediumItalic.ttf" />
+    <None Include="App_Themes\mail\fonts\montserrat\Montserrat-Regular.ttf" />
+    <None Include="App_Themes\mail\fonts\montserrat\Montserrat-SemiBold.ttf" />
+    <None Include="App_Themes\mail\fonts\montserrat\Montserrat-SemiBoldItalic.ttf" />
+    <None Include="App_Themes\mail\fonts\montserrat\Montserrat-Thin.ttf" />
+    <None Include="App_Themes\mail\fonts\montserrat\Montserrat-ThinItalic.ttf" />
+    <None Include="App_Themes\mail\vendor\bootstrap\css\bootstrap-grid.css.map" />
+    <None Include="App_Themes\mail\vendor\bootstrap\css\bootstrap-grid.min.css.map" />
+    <None Include="App_Themes\mail\vendor\bootstrap\css\bootstrap-reboot.css.map" />
+    <None Include="App_Themes\mail\vendor\bootstrap\css\bootstrap-reboot.min.css.map" />
+    <None Include="App_Themes\mail\vendor\bootstrap\css\bootstrap.css.map" />
+    <None Include="App_Themes\mail\vendor\bootstrap\css\bootstrap.min.css.map" />
+    <None Include="App_Themes\Theme1\css1\fonts\font-awesome-4.7.0\fonts\fontawesome-webfont.eot" />
+    <None Include="App_Themes\Theme1\css1\fonts\font-awesome-4.7.0\fonts\fontawesome-webfont.ttf" />
+    <None Include="App_Themes\Theme1\css1\fonts\font-awesome-4.7.0\fonts\fontawesome-webfont.woff" />
+    <None Include="App_Themes\Theme1\css1\fonts\font-awesome-4.7.0\fonts\fontawesome-webfont.woff2" />
+    <None Include="App_Themes\Theme1\css1\fonts\font-awesome-4.7.0\fonts\FontAwesome.otf" />
+    <None Include="App_Themes\Theme1\css1\fonts\font-awesome-4.7.0\less\animated.less" />
+    <None Include="App_Themes\Theme1\css1\fonts\font-awesome-4.7.0\less\bordered-pulled.less" />
+    <None Include="App_Themes\Theme1\css1\fonts\font-awesome-4.7.0\less\core.less" />
+    <None Include="App_Themes\Theme1\css1\fonts\font-awesome-4.7.0\less\fixed-width.less" />
+    <None Include="App_Themes\Theme1\css1\fonts\font-awesome-4.7.0\less\font-awesome.less" />
+    <None Include="App_Themes\Theme1\css1\fonts\font-awesome-4.7.0\less\icons.less" />
+    <None Include="App_Themes\Theme1\css1\fonts\font-awesome-4.7.0\less\larger.less" />
+    <None Include="App_Themes\Theme1\css1\fonts\font-awesome-4.7.0\less\list.less" />
+    <None Include="App_Themes\Theme1\css1\fonts\font-awesome-4.7.0\less\mixins.less" />
+    <None Include="App_Themes\Theme1\css1\fonts\font-awesome-4.7.0\less\path.less" />
+    <None Include="App_Themes\Theme1\css1\fonts\font-awesome-4.7.0\less\rotated-flipped.less" />
+    <None Include="App_Themes\Theme1\css1\fonts\font-awesome-4.7.0\less\screen-reader.less" />
+    <None Include="App_Themes\Theme1\css1\fonts\font-awesome-4.7.0\less\stacked.less" />
+    <None Include="App_Themes\Theme1\css1\fonts\font-awesome-4.7.0\less\variables.less" />
+    <None Include="App_Themes\Theme1\css1\fonts\font-awesome-4.7.0\scss\font-awesome.scss" />
+    <None Include="App_Themes\Theme1\css1\fonts\font-awesome-4.7.0\scss\_animated.scss" />
+    <None Include="App_Themes\Theme1\css1\fonts\font-awesome-4.7.0\scss\_bordered-pulled.scss" />
+    <None Include="App_Themes\Theme1\css1\fonts\font-awesome-4.7.0\scss\_core.scss" />
+    <None Include="App_Themes\Theme1\css1\fonts\font-awesome-4.7.0\scss\_fixed-width.scss" />
+    <None Include="App_Themes\Theme1\css1\fonts\font-awesome-4.7.0\scss\_icons.scss" />
+    <None Include="App_Themes\Theme1\css1\fonts\font-awesome-4.7.0\scss\_larger.scss" />
+    <None Include="App_Themes\Theme1\css1\fonts\font-awesome-4.7.0\scss\_list.scss" />
+    <None Include="App_Themes\Theme1\css1\fonts\font-awesome-4.7.0\scss\_mixins.scss" />
+    <None Include="App_Themes\Theme1\css1\fonts\font-awesome-4.7.0\scss\_path.scss" />
+    <None Include="App_Themes\Theme1\css1\fonts\font-awesome-4.7.0\scss\_rotated-flipped.scss" />
+    <None Include="App_Themes\Theme1\css1\fonts\font-awesome-4.7.0\scss\_screen-reader.scss" />
+    <None Include="App_Themes\Theme1\css1\fonts\font-awesome-4.7.0\scss\_stacked.scss" />
+    <None Include="App_Themes\Theme1\css1\fonts\font-awesome-4.7.0\scss\_variables.scss" />
+    <None Include="App_Themes\Theme1\css1\fonts\iconic\fonts\Material-Design-Iconic-Font.eot" />
+    <None Include="App_Themes\Theme1\css1\fonts\iconic\fonts\Material-Design-Iconic-Font.ttf" />
+    <None Include="App_Themes\Theme1\css1\fonts\iconic\fonts\Material-Design-Iconic-Font.woff" />
+    <None Include="App_Themes\Theme1\css1\fonts\iconic\fonts\Material-Design-Iconic-Font.woff2" />
+    <None Include="App_Themes\Theme1\css1\fonts\Linearicons-Free-v1.0.0\WebFont\Linearicons-Free.eot" />
+    <None Include="App_Themes\Theme1\css1\fonts\Linearicons-Free-v1.0.0\WebFont\Linearicons-Free.ttf" />
+    <None Include="App_Themes\Theme1\css1\fonts\Linearicons-Free-v1.0.0\WebFont\Linearicons-Free.woff" />
+    <None Include="App_Themes\Theme1\css1\fonts\Linearicons-Free-v1.0.0\WebFont\Linearicons-Free.woff2" />
+    <None Include="App_Themes\Theme1\css1\fonts\poppins\Poppins-Black.ttf" />
+    <None Include="App_Themes\Theme1\css1\fonts\poppins\Poppins-BlackItalic.ttf" />
+    <None Include="App_Themes\Theme1\css1\fonts\poppins\Poppins-Bold.ttf" />
+    <None Include="App_Themes\Theme1\css1\fonts\poppins\Poppins-BoldItalic.ttf" />
+    <None Include="App_Themes\Theme1\css1\fonts\poppins\Poppins-ExtraBold.ttf" />
+    <None Include="App_Themes\Theme1\css1\fonts\poppins\Poppins-ExtraBoldItalic.ttf" />
+    <None Include="App_Themes\Theme1\css1\fonts\poppins\Poppins-ExtraLight.ttf" />
+    <None Include="App_Themes\Theme1\css1\fonts\poppins\Poppins-ExtraLightItalic.ttf" />
+    <None Include="App_Themes\Theme1\css1\fonts\poppins\Poppins-Italic.ttf" />
+    <None Include="App_Themes\Theme1\css1\fonts\poppins\Poppins-Light.ttf" />
+    <None Include="App_Themes\Theme1\css1\fonts\poppins\Poppins-LightItalic.ttf" />
+    <None Include="App_Themes\Theme1\css1\fonts\poppins\Poppins-Medium.ttf" />
+    <None Include="App_Themes\Theme1\css1\fonts\poppins\Poppins-MediumItalic.ttf" />
+    <None Include="App_Themes\Theme1\css1\fonts\poppins\Poppins-Regular.ttf" />
+    <None Include="App_Themes\Theme1\css1\fonts\poppins\Poppins-SemiBold.ttf" />
+    <None Include="App_Themes\Theme1\css1\fonts\poppins\Poppins-SemiBoldItalic.ttf" />
+    <None Include="App_Themes\Theme1\css1\fonts\poppins\Poppins-Thin.ttf" />
+    <None Include="App_Themes\Theme1\css1\fonts\poppins\Poppins-ThinItalic.ttf" />
+    <None Include="App_Themes\Theme1\css1\fonts\ubuntu\Ubuntu-Bold.ttf" />
+    <None Include="App_Themes\Theme1\fonts1\font-awesome-4.7.0\fonts\fontawesome-webfont.eot" />
+    <None Include="App_Themes\Theme1\fonts1\font-awesome-4.7.0\fonts\fontawesome-webfont.ttf" />
+    <None Include="App_Themes\Theme1\fonts1\font-awesome-4.7.0\fonts\fontawesome-webfont.woff" />
+    <None Include="App_Themes\Theme1\fonts1\font-awesome-4.7.0\fonts\fontawesome-webfont.woff2" />
+    <None Include="App_Themes\Theme1\fonts1\font-awesome-4.7.0\fonts\FontAwesome.otf" />
+    <None Include="App_Themes\Theme1\fonts1\font-awesome-4.7.0\less\animated.less" />
+    <None Include="App_Themes\Theme1\fonts1\font-awesome-4.7.0\less\bordered-pulled.less" />
+    <None Include="App_Themes\Theme1\fonts1\font-awesome-4.7.0\less\core.less" />
+    <None Include="App_Themes\Theme1\fonts1\font-awesome-4.7.0\less\fixed-width.less" />
+    <None Include="App_Themes\Theme1\fonts1\font-awesome-4.7.0\less\font-awesome.less" />
+    <None Include="App_Themes\Theme1\fonts1\font-awesome-4.7.0\less\icons.less" />
+    <None Include="App_Themes\Theme1\fonts1\font-awesome-4.7.0\less\larger.less" />
+    <None Include="App_Themes\Theme1\fonts1\font-awesome-4.7.0\less\list.less" />
+    <None Include="App_Themes\Theme1\fonts1\font-awesome-4.7.0\less\mixins.less" />
+    <None Include="App_Themes\Theme1\fonts1\font-awesome-4.7.0\less\path.less" />
+    <None Include="App_Themes\Theme1\fonts1\font-awesome-4.7.0\less\rotated-flipped.less" />
+    <None Include="App_Themes\Theme1\fonts1\font-awesome-4.7.0\less\screen-reader.less" />
+    <None Include="App_Themes\Theme1\fonts1\font-awesome-4.7.0\less\stacked.less" />
+    <None Include="App_Themes\Theme1\fonts1\font-awesome-4.7.0\less\variables.less" />
+    <None Include="App_Themes\Theme1\fonts1\font-awesome-4.7.0\scss\font-awesome.scss" />
+    <None Include="App_Themes\Theme1\fonts1\font-awesome-4.7.0\scss\_animated.scss" />
+    <None Include="App_Themes\Theme1\fonts1\font-awesome-4.7.0\scss\_bordered-pulled.scss" />
+    <None Include="App_Themes\Theme1\fonts1\font-awesome-4.7.0\scss\_core.scss" />
+    <None Include="App_Themes\Theme1\fonts1\font-awesome-4.7.0\scss\_fixed-width.scss" />
+    <None Include="App_Themes\Theme1\fonts1\font-awesome-4.7.0\scss\_icons.scss" />
+    <None Include="App_Themes\Theme1\fonts1\font-awesome-4.7.0\scss\_larger.scss" />
+    <None Include="App_Themes\Theme1\fonts1\font-awesome-4.7.0\scss\_list.scss" />
+    <None Include="App_Themes\Theme1\fonts1\font-awesome-4.7.0\scss\_mixins.scss" />
+    <None Include="App_Themes\Theme1\fonts1\font-awesome-4.7.0\scss\_path.scss" />
+    <None Include="App_Themes\Theme1\fonts1\font-awesome-4.7.0\scss\_rotated-flipped.scss" />
+    <None Include="App_Themes\Theme1\fonts1\font-awesome-4.7.0\scss\_screen-reader.scss" />
+    <None Include="App_Themes\Theme1\fonts1\font-awesome-4.7.0\scss\_stacked.scss" />
+    <None Include="App_Themes\Theme1\fonts1\font-awesome-4.7.0\scss\_variables.scss" />
+    <None Include="App_Themes\Theme1\fonts1\iconic\fonts\Material-Design-Iconic-Font.eot" />
+    <None Include="App_Themes\Theme1\fonts1\iconic\fonts\Material-Design-Iconic-Font.ttf" />
+    <None Include="App_Themes\Theme1\fonts1\iconic\fonts\Material-Design-Iconic-Font.woff" />
+    <None Include="App_Themes\Theme1\fonts1\iconic\fonts\Material-Design-Iconic-Font.woff2" />
+    <None Include="App_Themes\Theme1\fonts1\Linearicons-Free-v1.0.0\WebFont\Linearicons-Free.eot" />
+    <None Include="App_Themes\Theme1\fonts1\Linearicons-Free-v1.0.0\WebFont\Linearicons-Free.ttf" />
+    <None Include="App_Themes\Theme1\fonts1\Linearicons-Free-v1.0.0\WebFont\Linearicons-Free.woff" />
+    <None Include="App_Themes\Theme1\fonts1\Linearicons-Free-v1.0.0\WebFont\Linearicons-Free.woff2" />
+    <None Include="App_Themes\Theme1\fonts1\poppins\Poppins-Black.ttf" />
+    <None Include="App_Themes\Theme1\fonts1\poppins\Poppins-BlackItalic.ttf" />
+    <None Include="App_Themes\Theme1\fonts1\poppins\Poppins-Bold.ttf" />
+    <None Include="App_Themes\Theme1\fonts1\poppins\Poppins-BoldItalic.ttf" />
+    <None Include="App_Themes\Theme1\fonts1\poppins\Poppins-ExtraBold.ttf" />
+    <None Include="App_Themes\Theme1\fonts1\poppins\Poppins-ExtraBoldItalic.ttf" />
+    <None Include="App_Themes\Theme1\fonts1\poppins\Poppins-ExtraLight.ttf" />
+    <None Include="App_Themes\Theme1\fonts1\poppins\Poppins-ExtraLightItalic.ttf" />
+    <None Include="App_Themes\Theme1\fonts1\poppins\Poppins-Italic.ttf" />
+    <None Include="App_Themes\Theme1\fonts1\poppins\Poppins-Light.ttf" />
+    <None Include="App_Themes\Theme1\fonts1\poppins\Poppins-LightItalic.ttf" />
+    <None Include="App_Themes\Theme1\fonts1\poppins\Poppins-Medium.ttf" />
+    <None Include="App_Themes\Theme1\fonts1\poppins\Poppins-MediumItalic.ttf" />
+    <None Include="App_Themes\Theme1\fonts1\poppins\Poppins-Regular.ttf" />
+    <None Include="App_Themes\Theme1\fonts1\poppins\Poppins-SemiBold.ttf" />
+    <None Include="App_Themes\Theme1\fonts1\poppins\Poppins-SemiBoldItalic.ttf" />
+    <None Include="App_Themes\Theme1\fonts1\poppins\Poppins-Thin.ttf" />
+    <None Include="App_Themes\Theme1\fonts1\poppins\Poppins-ThinItalic.ttf" />
+    <None Include="App_Themes\Theme1\fonts1\ubuntu\Ubuntu-Bold.ttf" />
+    <None Include="App_Themes\Theme1\fonts1\ubuntu\Ubuntu-BoldItalic.ttf" />
+    <None Include="App_Themes\Theme1\fonts1\ubuntu\Ubuntu-Italic.ttf" />
+    <None Include="App_Themes\Theme1\fonts1\ubuntu\Ubuntu-Light.ttf" />
+    <None Include="App_Themes\Theme1\fonts1\ubuntu\Ubuntu-LightItalic.ttf" />
+    <None Include="App_Themes\Theme1\fonts1\ubuntu\Ubuntu-Medium.ttf" />
+    <None Include="App_Themes\Theme1\fonts1\ubuntu\Ubuntu-MediumItalic.ttf" />
+    <None Include="App_Themes\Theme1\fonts1\ubuntu\Ubuntu-Regular.ttf" />
+    <None Include="App_Themes\Theme1\vendor1\bootstrap\css\bootstrap-grid.css.map" />
+    <None Include="App_Themes\Theme1\vendor1\bootstrap\css\bootstrap-grid.min.css.map" />
+    <None Include="App_Themes\Theme1\vendor1\bootstrap\css\bootstrap-reboot.css.map" />
+    <None Include="App_Themes\Theme1\vendor1\bootstrap\css\bootstrap-reboot.min.css.map" />
+    <None Include="App_Themes\Theme1\vendor1\bootstrap\css\bootstrap.css.map" />
+    <None Include="App_Themes\Theme1\vendor1\bootstrap\css\bootstrap.min.css.map" />
+    <None Include="App_Themes\usertheme\fonts\ElegantIcons.eot" />
+    <None Include="App_Themes\usertheme\fonts\ElegantIcons.ttf" />
+    <None Include="App_Themes\usertheme\fonts\ElegantIcons.woff" />
+    <None Include="App_Themes\usertheme\fonts\fontawesome-webfont.eot" />
+    <None Include="App_Themes\usertheme\fonts\fontawesome-webfont.ttf" />
+    <None Include="App_Themes\usertheme\fonts\fontawesome-webfont.woff" />
+    <None Include="App_Themes\usertheme\fonts\fontawesome-webfont.woff2" />
+    <None Include="App_Themes\usertheme\fonts\FontAwesome.otf" />
+    <None Include="App_Themes\usertheme\fonts\themify.eot" />
+    <None Include="App_Themes\usertheme\fonts\themify.ttf" />
+    <None Include="App_Themes\usertheme\fonts\themify.woff" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_LocalResources\login.resx" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>57248</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
